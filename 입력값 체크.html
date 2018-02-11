@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    
+<!--  입력값 체크(유효성 체크)-->
+<!--  사용자가 입력한 입력이 옳바른지에 대한 체크-->
+    
+    <form action="#">
+    <input type="id" name="id" placeholder="아이디를 입력"
+required pattern="[a-zA-Z][a-zA-Z].+[0-9]">
+<!-- 반드시 입력해야하는 속성은 required를 써주면 반드시 입력해야 제출이 된다-->
+<!--        pattern의 속성값은 반드시 정규표현시이 와야한다
+(.은 모든 문자를 의미)(+는 뒤에 문자가 하나 이상온다는 것을 의미)-->
+   
+        
+<!--
+        정규표현식 해석 : [a-zA-Z][a-zA-Z].+[0-9]
+        첫문자는 대소문자a-z,두번째 문자는 대소문자a-z,세번째는 아무거나,그 다음은 모든 문자를 하나이상 쓰겠다
+        그리고 마지막엔 숫자 0-9를 쓴다
+-->
+        
+    <input type="email" name="email" placeholder="이메일 입력">
+        
+    <input type="submit" value="제출">
+    
+    </form>
+    
+
+</body>
+    
+</html>
